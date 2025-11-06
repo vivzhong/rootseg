@@ -27,7 +27,7 @@ Optional arguments:
  - `--output_dir_name OUTPUT_DIR_NAME`
                         Directory name to save outputs — will be created in the parent folder of input_dir
  - `--dpi DPI`             DPI of output segmented images. Default is 600.
- - -`--hue_range HUE_RANGE`
+ - `--hue_range HUE_RANGE`
                         [low,high] threshold range for hue, used in shoot masking. Default is (39,115).
  - `--sigma SIGMA`         Sigma for edge detection with canny. Default is 2.0.
  - `--low_thresh LOW_THRESH`
