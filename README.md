@@ -23,18 +23,18 @@ The full input directory path for `img_dir` should be given (e.g. `/Users/.../im
 
 Optional arguments:
 
-```bash
-  --output_dir_name OUTPUT_DIR_NAME
+
+  `--output_dir_name OUTPUT_DIR_NAME`
                         Directory name to save outputs — will be created in the parent folder of input_dir
-  --dpi DPI             DPI of output segmented images. Default is 600.
-  --hue_range HUE_RANGE
+  `--dpi DPI`             DPI of output segmented images. Default is 600.
+  `--hue_range HUE_RANGE`
                         [low,high] threshold range for hue, used in shoot masking. Default is (39,115).
-  --sigma SIGMA         Sigma for edge detection with canny. Default is 2.0.
-  --low_thresh LOW_THRESH
+  `--sigma SIGMA`         Sigma for edge detection with canny. Default is 2.0.
+  `--low_thresh LOW_THRESH`
                         Lower bound for edge detection with canny. Default is 98.
-  --high_thresh HIGH_THRESH
+  `--high_thresh HIGH_THRESH`
                         Upper bound for edge detection with canny. Default is 100.
-```
+
 For each image, the output directory will contain three segmented images: `segmented_seedling`, `segmented_shoot`, `segmented_root`
 
 ### Step 2: Measuring roots
@@ -47,9 +47,9 @@ python3 measure_roots.py input_dir
 You can directly use the `segmented_root` directory generated in Step 1 as the `input_dir`. 
 
 Optional arguments:
-```bash
-  --output_dir_name OUTPUT_DIR_NAME
+
+  `--output_dir_name OUTPUT_DIR_NAME`
                         Directory name to save outputs — will be created in the parent folder of input_dir.
-  --dpi DPI             DPI of input images. Default is 600.
-```
+  `--dpi DPI`             DPI of input images. Default is 600.
+
 For each image, the output directory will contain a CSV of all measured roots and an overlay image with the corresponding labels and traces for each root.
