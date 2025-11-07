@@ -60,4 +60,4 @@ Optional arguments:
 
 For each image, the output directory will contain a CSV of all measured roots and an overlay image with the corresponding labels and traces for each root.
 
-Unfortunately, running it directly on the `segmented_root` doesn't work very well right now, so it's better to crop it first (or you could crop the original image before running `segment_roots.py`). 
+Unfortunately, running it directly on the `segmented_root` doesn't work very well right now due to the plate edges, so it's better to crop it first (or you could crop the original image before running `segment_roots.py`). 
