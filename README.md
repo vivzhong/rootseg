@@ -56,6 +56,7 @@ Optional arguments:
 -  `--output_dir_name OUTPUT_DIR_NAME`
                         Directory name to save outputs — will be created in the parent folder of input_dir.
 -  `--dpi DPI`             DPI of input images. Default is 600.
+-  `--filter FILTER` Toggle filter for root-like objects on or off. Default is on.
 
 For each image, the output directory will contain a CSV of all measured roots and an overlay image with the corresponding labels and traces for each root.
 
