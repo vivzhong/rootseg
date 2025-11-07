@@ -44,6 +44,11 @@ If you wish to measure the length of the roots, run:
 ```bash
 python3 measure_roots.py input_dir
 ```
+or if there are two plates in the image:
+
+```bash
+python3 measure_roots_two_plates.py input_dir
+```
 You can directly use the `segmented_root` directory generated in Step 1 as the `input_dir`. 
 
 Optional arguments:
@@ -54,8 +59,4 @@ Optional arguments:
 
 For each image, the output directory will contain a CSV of all measured roots and an overlay image with the corresponding labels and traces for each root.
 
-Unfortunately, running it directly on the `segmented_root` doesn't work very well right now, so it's better to crop it first (or you could crop the original image before running `segment_roots.py`). You can then run the following version, which has less stringent filters for what is a root:
-
-```bash
-python3 measure_roots_cropped.py input_dir
-```
+Unfortunately, running it directly on the `segmented_root` doesn't work very well right now, so it's better to crop it first (or you could crop the original image before running `segment_roots.py`). 
